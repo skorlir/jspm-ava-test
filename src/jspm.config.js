@@ -3,6 +3,7 @@ SystemJS.config({
     "paths": {
       "github:": "jspm_packages/github/",
       "npm:": "jspm_packages/npm/",
+      "~/": "dev/app/",
       "test/": "src/app/"
     }
   },
@@ -11,38 +12,9 @@ SystemJS.config({
       "main": "test.js",
       "format": "cjs"
     },
-    "@derekkent/derekkent.com": {
-      "format": "cjs",
-      "main": "/app/main.js"
-    },
     "~/": {
       "defaultExtension": "js"
-    },
-    "npm:superb.js@0.0.4": {
-      "map": {
-        "supermodels.js": "npm:supermodels.js@0.1.1"
-      }
     }
-  },
-  paths: {
-    "ga": "https://www.google-analytics.com/analytics.js",
-    "maps": "https://maps.googleapis.com/maps/api/js?key=AIzaSyDs-LCQYSx1USipOSIVS_8sjnfNIPdfIsA"
-  },
-  meta: {
-    "ga": {
-      "scriptLoad": true,
-      "exports": "ga",
-      "format": "global"
-    },
-    "maps": {
-      "scriptLoad": true,
-      "exports": "google",
-      "format": "global"
-    }
-  },
-  map: {
-    "superb": "npm:superb.js@0.0.4",
-    "incremental-dom": "npm:incremental-dom@0.4.1"
   }
 });
 

@@ -3,10 +3,7 @@ require('require-dir')('./gulp/tasks', {recurse: true});
 
 gulp.task('default', gulp.series(
     'clean',
-    gulp.parallel(
-        'copy',
-        'scripts'
-    ),
+    'scripts',
     'jspm-builder'
 ));
 

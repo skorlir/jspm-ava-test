@@ -1,8 +1,8 @@
 import test from 'ava';
 import {returnTrue} from '~/test';
 
-test('Test', assert => {
-    let actual = test();
+test('JSPM', assert => {
+    let actual = returnTrue();
     let expected = true;
 
     assert.is(actual, expected,

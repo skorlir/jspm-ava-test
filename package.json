@@ -2,7 +2,7 @@
   "scripts": {
     "prepublish": "jspm install",
     "upgrade": "jspm update",
-    "test": "gulp dev-setup && ava"
+    "test": "gulp && ava"
   },
   "devDependencies": {
     "ava": "0.15.2",
