@@ -22,7 +22,6 @@
     "yargs": "4.7.1"
   },
   "jspm": {
-    "name": "test",
     "main": "test.js",
     "directories": {
       "lib": "src/app"
