@@ -10,7 +10,7 @@ SystemJS.config({
     "paths": {
       "github:": "jspm_packages/github/",
       "npm:": "jspm_packages/npm/",
-      "app/": "src/app/test/"
+      "app/": "src/app/",
     }
   },
   devConfig: {
