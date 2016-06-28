@@ -1,5 +1,5 @@
 import test from 'ava';
-import {returnTrue} from '~/test';
+import { returnTrue } from 'app/test';
 
 test('JSPM', assert => {
     let actual = returnTrue();

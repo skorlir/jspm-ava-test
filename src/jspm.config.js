@@ -1,19 +1,33 @@
 SystemJS.config({
+  browserConfig: {
+    "paths": {
+      "github:": "/jspm_packages/github/",
+      "npm:": "/jspm_packages/npm/",
+      "app/": "/src/app/"
+    }
+  },
   nodeConfig: {
     "paths": {
       "github:": "jspm_packages/github/",
       "npm:": "jspm_packages/npm/",
-      "~/": "dev/app/",
-      "test/": "src/app/"
+      "app/": "src/app/test/"
     }
   },
+  devConfig: {
+    "map": {
+      "plugin-babel": "npm:systemjs-plugin-babel@0.0.12"
+    }
+  },
+  transpiler: "plugin-babel",
   packages: {
-    "test": {
-      "main": "test.js",
-      "format": "cjs"
-    },
-    "~/": {
-      "defaultExtension": "js"
+    "app": {
+      "main": "app.js",
+      "format": "esm",
+      "meta": {
+        "*.js": {
+          "loader": "plugin-babel"
+        }
+      }
     }
   }
 });
